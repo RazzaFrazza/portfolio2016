@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Matt's Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</head>
+
+<body>
+    <div class="modal about-project-modal-sm" tabindex="-1" role="dialog" aria-labelledby="aboutProjectModal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3 class="projectTitleText"></h3>
+                    <div id="modalCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#modalCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#modalCarousel" data-slide-to="1"></li>
+                            <li data-target="#modalCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img class="carouselImage1" src="..." alt="...">
+                                <div class="carousel-caption">
+                                    ...
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="carouselImage2" src="..." alt="...">
+                                <div class="carousel-caption">
+                                    ...
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="carouselImage3" src="..." alt="...">
+                                <div class="carousel-caption">
+                                    ...
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="carouselImage4" src="..." alt="...">
+                                <div class="carousel-caption">
+                                    ...
+                                </div>
+                            </div>
+                            ...
+                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#modalCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#modalCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="aboutProjectsText">
+                        <p class="aboutProjectsParagraph">
+                        </p>
+                    </div>
+                    <div class="aboutImageContainer">
+                        <img class="modalImage1" src="#">
+                        <img class="modalImage2" src="#">
+                        <img class="modalImage3" src="#">
+                    </div>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="mobileMenu">
+        <div class="menu">
+            <div class="logo">
+                <img src="./assets/images/navLogo.svg" alt="Navigation Logo">
+                <span class="nameSpan">Matthew Shaver</span>
+                <span class="titleSpan">Web Developer, Designer</span>
+            </div>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </div>
+        <div class="x">
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </div>
+        <div class="hamburger">
+            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </div>
+    </section>
+    <div class="container-fluid">
+        <section id="about" class="hero">
+            <div class="row">
+                <div class="heroImageText col-xs-12 col-md-11">
+                    <h3>WEB DEVELOPER&nbsp;&nbsp;DESIGNER</h3>
+                    <h1>Matthew Shaver</h1>
+                    <p class="introText">
+                        I create online presences, branding for people, businesses from any background. Years of experience, excellent communication skills, proven results guarantees that you will find no one more enthralling for your web development, design needs.
+                    </p>
+                </div>
+                <div class="phoneContainer">
+                    <div class="phone">
+                    </div>
+                </div>
+                <ul class="list-inline col-xs-12 col-sm-5 col-md-6">
+                    <li>
+                        <a href="#contact" class="hvr-grow contactButton"> 
+        CONTACT MATTHEW
+      </a>
+                    </li>
+                    <div class="listButtonContainer">
+                        <li class="listButtons">
+                            <a class="hvr-float" href="#projects">
+            View Matthew's Projects
+      </a>
+                        </li>
+                        <li class="listButtons">
+                            <a href="http://linkedin.com/in/seattlewebdeveloper">
+                                <img class="icon hvr-float" src="http://i1079.photobucket.com/albums/w503/retrotemporecords/LinkedIn_zpsoy3pngk1.png" />
+                            </a>
+                        </li>
+                        <li class="listButtons">
+                            <a href="http://github.com/razzafrazza">
+                                <img class="icon hvr-float" src="http://i1079.photobucket.com/albums/w503/retrotemporecords/githubIcon_zpseoovvtwf.png">
+                            </a>
+                        </li>
+                        <li class="listButtons">
+                            <a href="https://www.upwork.com/freelancers/~01160e5971301c9e38">
+                                <img class="icon hvr-float" src="http://i1079.photobucket.com/albums/w503/retrotemporecords/upWorks_zpshkkuhjwe.png" />
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <section class="navigation">
+            <div class="row">
+                <div class="col-xs-12">
+                    <nav class="mainNav">
+                        <div class="logo">
+                            <img src="./assets/images/navLogo.svg" alt="Navigation Logo">
+                            <span class="nameSpan">Matthew Shaver</span>
+                            <span class="titleSpan">Web Developer, Designer</span>
+                        </div>
+                        <div class="linkContainer">
+                            <ul class="containerLinks">
+                                <li><a class="hvr-float" href="#about">About</a></li>
+                                <li><a class="hvr-float" href="#services">Services</a></li>
+                                <li><a class="hvr-float" href="#projects">Projects</a></li>
+                                <li><a class="hvr-float" href="#">Blog</a></li>
+                                <li><a class="hvr-grow navContactButton" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services">
+            <div class="row">
+                <p class="servicesIntro col-xs-12">All of the services you could ever want & more</p>
+                <div class="col-xs-12 col-sm-4">
+                    <img src="./assets/images/macBook.svg" alt="Service Description" />
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>Simple static websites</li>
+                        <li>E-commerce online stores</li>
+                        <li>Content-Managed websites</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <img src="./assets/images/brushIcon.svg" alt="Service Description" />
+                    <h3>Web Design</h3>
+                    <ul>
+                        <li>Branding</li>
+                        <li>Planning & Research</li>
+                        <li>Responsive Web Design</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <img src="./assets/images/information.svg" alt="Service Description" />
+                    <h3>Digital Services</h3>
+                    <ul>
+                        <li>Social Media</li>
+                        <li>Email Campaigns</li>
+                        <li>Tutorials and Support</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="row">
+                <div class="textContainer text-center col-xs-12">
+                    <h1>Designed for your needs</h1>
+                    <p>Projects are completed using the latest, greatest in web technology from around the world.</p>
+                    <div class="techLogosContainer">
+                        <img src="./assets/images/wordpressLogo.svg">
+                        <img src="./assets/images/bootstrapLogo.svg">
+                        <img src="./assets/images/photoshopLogo.svg">
+                        <img src="./assets/images/shopifyLogo.svg">
+                        </ul>
+                    </div>
+                    <a href="#contact" class="hvr-grow projectsContactButton"> 
+                  Get Started
+                </a>
+                    <a href="#projects" class="hvr-grow projectsContactButton"> 
+                  View Projects
+                </a>
+                </div>
+                <div id="projects" class="projectsSlider col-xs-12 text-center">
+                    <div id="Container">
+                        <div class="controls">
+                            <button class="filter controlStyles projectPadding hvr-grow" data-filter="all">Show All</button>
+                            <button class="filter controlStyles projectPadding hvr-grow" data-filter=".cms">CMS</button>
+                            <button class="filter controlStyles projectPadding hvr-grow" data-filter=".spa">SPA</button>
+                            <button class="filter controlStyles projectPadding hvr-grow" data-filter=".bootstrap">BOOTSTRAP</button>
+                        </div>
+                        <div class="projectViews">
+                            <div class="mix cms bootstrap projectPadding project1" data-myorder="2">
+                                <div class="projectImgContainer">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="./assets/images/projectPreviews/ddnStorage.png" alt="DDN Storage Image">
+                                        <div class="overlay">
+                                            <p class="projectTitle">DDN</p>
+                                            <button class="projectViewsButtonOne" data-toggle="modal" data-target=".about-project-modal-sm" data-title="DDN" data-text="DDN was created using Bootstrap, Wordpress. I helped create several templates, manage this site." data-img1="./assets/images/projectImages/DDN/ddn1.png" data-img2="./assets/images/projectImages/DDN/ddn2.png" data-img3="./assets/images/projectImages/DDN/ddn3.png" data-cimg1="./assets/images/projectImages/DDN/ddn4.png" data-cimg2="./assets/images/projectImages/DDN/ddn5.png" data-cimg3="./assets/images/projectImages/DDN/ddn6.png" data-cimg4="./assets/images/projectImages/DDN/ddn7.png">ABOUT</button>
+                                            <a class="projectViewsButtonTwo" href="http://ddn.com" target="_blank">VIEW PROJECT</a></button>
+                                            <p class="icon-links">
+                                                <a href="#">
+                                                    <span class="fa fa-twitter"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-facebook"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-instagram"></span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix cms spa projectPadding project2" data-myorder="4">
+                                <div class="projectImgContainer">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="./assets/images/projectPreviews/e3Design.png" alt="e3Design Image">
+                                        <div class="overlay">
+                                            <p class="projectTitle">E3 Design</p>
+                                            <button class="projectViewsButtonOne" data-toggle="modal" data-target=".about-project-modal-sm" data-title="E3 Design" data-text="E3 Design was created using Wordpress. I integrated the dribbble API, custom hover effects via custom JS." data-img1="./assets/images/projectImages/e3Design/e3Design1.png" data-img2="./assets/images/projectImages/e3Design/e3Design2.png" data-img3="./assets/images/projectImages/e3Design/e3Design3.png" data-cimg1="./assets/images/projectImages/e3Design/e3Design4.png" data-cimg2="./assets/images/projectImages/e3Design/e3Design5.png" data-cimg3="./assets/images/projectImages/e3Design/e3Design6.png" data-cimg4="./assets/images/projectImages/e3Design/e3Design7.png">ABOUT</button>
+                                            <a class="projectViewsButtonTwo" href="http://e3design.co.uk" target="_blank">VIEW PROJECT</a></button>
+                                            <p class="icon-links">
+                                                <a href="#">
+                                                    <span class="fa fa-twitter"></span>
+                                                </a>
+                                                <a href="Ï#">
+                                                    <span class="fa fa-facebook"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-instagram"></span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix cms projectPadding project3" data-myorder="1">
+                                <div class="projectImgContainer">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="./assets/images/projectPreviews/museumOfSex.png" alt="Museum of Sex Image">
+                                        <div class="overlay">
+                                            <p class="projectTitle">Museum Of Sex</p>
+                                            <button class="projectViewsButtonOne" data-toggle="modal" data-target=".about-project-modal-sm" data-title="Museum Of Sex" data-text="Museum of Sex's Website was created using Wordpress." data-img1="./assets/images/projectImages/mosex/mosex1.png" data-img2="./assets/images/projectImages/mosex/mosex2.png" data-img3="./assets/images/projectImages/mosex/mosex3.png" data-cimg1="./assets/images/projectImages/mosex/mosex4.png" data-cimg2="./assets/images/projectImages/mosex/mosex5.png" data-cimg3="./assets/images/projectImages/mosex/mosex6.png" data-cimg4="./assets/images/projectImages/mosex/mosex7.png">ABOUT</button>
+                                            <a class="projectViewsButtonTwo" href="http://museumofsex.com" target="_blank">VIEW PROJECT</a></button>
+                                            <p class="icon-links">
+                                                <a href="#">
+                                                    <span class="fa fa-twitter"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-facebook"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-instagram"></span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix bootstrap projectPadding project4" data-myorder="8">
+                                <div class="projectImgContainer">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="./assets/images/projectPreviews/seeSawLabs.png" alt="See Saw Labs Image">
+                                        <div class="overlay">
+                                            <p class="projectTitle">SeeSawLabs</p>
+                                            <button class="projectViewsButtonOne" data-toggle="modal" data-target=".about-project-modal-sm" data-title="E3 Design" data-text="SeeSawLab's site was created with Bootstrap, Google Maps API, FormSpree, Photoshop." data-img1="./assets/images/projectImages/seeSawLabs/seeSawLabs1.png" data-img2="./assets/images/projectImages/seeSawLabs/seeSawLabs2.png" data-img3="./assets/images/projectImages/seeSawLabs/seeSawLabs3.png" data-cimg1="./assets/images/projectImages/seeSawLabs/seeSawLabs4.png" data-cimg2="./assets/images/projectImages/seeSawLabs/seeSawLabs5.png" data-cimg3="./assets/images/projectImages/seeSawLabs/seeSawLabs6.png" data-cimg4="./assets/images/projectImages/seeSawLabs/seeSawLabs7.png">ABOUT</button>
+                                            <a class="projectViewsButtonTwo" href="http://razzafrazza.github.io/seesawlabs.github.io/" target="_blank">VIEW PROJECT</a></button>
+                                            <p class="icon-links">
+                                                <a href="#">
+                                                    <span class="fa fa-twitter"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-facebook"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-instagram"></span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix cms projectPadding project5" data-myorder="8">
+                                <div class="projectImgContainer">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="./assets/images/projectPreviews/tagNBrag.png" alt="Tag N Brag Image">
+                                        <div class="overlay">
+                                            <p class="projectTitle">Tag N Brag</p>
+                                            <button class="projectViewsButtonOne" data-toggle="modal" data-target=".about-project-modal-sm" data-title="Tag N Brag" data-text="Tag N Brag's site was created using Wordpress." data-img1="./assets/images/projectImages/tagNBrag/tagNBrag1.png" data-img2="./assets/images/projectImages/tagNBrag/tagNBrag2.png" data-img3="./assets/images/projectImages/tagNBrag/tagNBrag3.png" data-cimg1="./assets/images/projectImages/tagNBrag/tagNBrag4.png" data-cimg2="./assets/images/projectImages/tagNBrag/tagNBrag5.png" data-cimg3="./assets/images/projectImages/tagNBrag/tagNBrag6.png" data-cimg4="./assets/images/projectImages/tagNBrag/tagNBrag7.png">ABOUT</button>
+                                            <a class="projectViewsButtonTwo" href="http://www.tag-n-brag.tv/" target="_blank">VIEW PROJECT</a></button>
+                                            <p class="icon-links">
+                                                <a href="#">
+                                                    <span class="fa fa-twitter"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-facebook"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-instagram"></span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix spa projectPadding project6" data-myorder="8">
+                                <div class="projectImgContainer">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="./assets/images/projectPreviews/objectXXX.png" alt="ObjectXXX Image">
+                                        <div class="overlay">
+                                            <p class="projectTitle">ObjectXXX</p>
+                                            <button class="projectViewsButtonOne" data-toggle="modal" data-target=".about-project-modal-sm" data-title="E3 Design" data-text="ObjectXXX is a spa that was created using javascript,jQuery, photoshop." data-img1="./assets/images/projectImages/americanLock/americanLock1.png" data-img2="./assets/images/projectImages/americanLock/americanLock2.png" data-img3="./assets/images/projectImages/americanLock/americanLock3.png" data-cimg1="./assets/images/projectImages/americanLock/americanLock4.png" data-cimg2="./assets/images/projectImages/americanLock/americanLock5.png" data-cimg3="./assets/images/projectImages/americanLock/americanLock6.png" data-cimg4="./assets/images/projectImages/americanLock/americanLock7.png">ABOUT</button>
+                                            <a class="projectViewsButtonTwo" href="http://game.objectxxx.com" target="_blank">VIEW PROJECT</a></button>
+                                            <p class="icon-links">
+                                                <a href="#">
+                                                    <span class="fa fa-twitter"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-facebook"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-instagram"></span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix cms bootstrap projectPadding project7" data-myorder="8">
+                                <div class="projectImgContainer">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="./assets/images/projectPreviews/newIsraelFund.png" alt="Mew Israel Fund Image">
+                                        <div class="overlay">
+                                            <p class="projectTitle">New Israel Fund</p>
+                                            <button class="projectViewsButtonOne" data-toggle="modal" data-target=".about-project-modal-sm" data-title="E3 Design" data-text="NIF was created using Wordpress, Bootstrap. I created templates, helped manage this site." data-img1="./assets/images/projectImages/nif/nif1.png" data-img2="./assets/images/projectImages/nif/nif2.png" data-img3="./assets/images/projectImages/nif/nif3.png" data-cimg1="./assets/images/projectImages/nif/nif4.png" data-cimg2="./assets/images/projectImages/nif/nif5.png" data-cimg3="./assets/images/projectImages/nif/nif6.png" data-cimg4="./assets/images/projectImages/nif/nif7.png">ABOUT</button>
+                                            <a class="projectViewsButtonTwo" href="http://nif.org" target="_blank">VIEW PROJECT</a></button>
+                                            <p class="icon-links">
+                                                <a href="#">
+                                                    <span class="fa fa-twitter"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-facebook"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-instagram"></span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix spa projectPadding project8" data-myorder="8">
+                                <div class="projectImgContainer">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="./assets/images/projectPreviews/AIA.png" alt="aia Image">
+                                        <div class="overlay">
+                                            <p class="projectTitle">The American Institute of Architects</p>
+                                            <button class="projectViewsButtonOne" data-toggle="modal" data-target=".about-project-modal-sm" data-title="All American Locksmith" data-text="American Institute of Architect's spa was created using html, css, jquery, svgs. " data-img1="./assets/images/projectImages/aia/aia1.png" data-img2="./assets/images/projectImages/aia/aia2.png" data-img3="./assets/images/projectImages/aia/aia3.png" data-cimg1="./assets/images/projectImages/aia/aia4.png" data-cimg2="./assets/images/projectImages/aia/aia5.png" data-cimg3="./assets/images/projectImages/aia/aia6.png" data-cimg4="./assets/images/projectImages/aia/aia7.png">ABOUT</button>
+                                            <a class="projectViewsButtonTwo" href="http://razzafrazza.github.io/americanLock" target="_blank">VIEW PROJECT</a></button>
+                                            <p class="icon-links">
+                                                <a href="#">
+                                                    <span class="fa fa-twitter"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-facebook"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-instagram"></span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix cms projectPadding project9" data-myorder="8">
+                                <div class="projectImgContainer">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="./assets/images/projectPreviews/heathHyde.png" alt="HeathHyde Image">
+                                        <div class="overlay">
+                                            <p class="projectTitle">Heath Hyde</p>
+                                            <button class="projectViewsButtonOne" data-toggle="modal" data-target=".about-project-modal-sm" data-title="HeathHyde" data-text="HeathHyde was created using Wordpress & the Genesis theme framework." data-img1="./assets/images/projectImages/heathHyde/heathHyde1.png" data-img2="./assets/images/projectImages/heathHyde/heathHyde2.png" data-img3="./assets/images/projectImages/heathHyde/heathHyde3.png" data-cimg1="./assets/images/projectImages/heathHyde/heathHyde4.png" data-cimg2="./assets/images/projectImages/heathHyde/heathHyde5.png" data-cimg3="./assets/images/projectImages/heathHyde/heathHyde6.png" data-cimg4="./assets/images/projectImages/heathHyde/heathHyde7.png">ABOUT</button>
+                                            <a class="projectViewsButtonTwo" href="http://HeathHydeAttorneyAtLaw.com" target="_blank">VIEW PROJECT</a></button>
+                                            <p class="icon-links">
+                                                <a href="#">
+                                                    <span class="fa fa-twitter"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-facebook"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-instagram"></span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix cms projectPadding project10" data-myorder="8">
+                                <div class="projectImgContainer">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="./assets/images/projectPreviews/texasBest.png" alt="Texas Best Window Cleaning Image">
+                                        <div class="overlay">
+                                            <p class="projectTitle">Texas Best Window Cleaning</p>
+                                            <button class="projectViewsButtonOne" data-toggle="modal" data-target=".about-project-modal-sm" data-title="Texas Best Window Cleaning" data-text="Texas Best Window Cleaning was created using Wordpress & the Genesis theme framework." data-img1="./assets/images/projectImages/texasWindow/texasWindow1.png" data-img2="./assets/images/projectImages/texasWindow/texasWindow2.png" data-img3="./assets/images/projectImages/texasWindow/texasWindow3.png" data-cimg1="./assets/images/projectImages/texasWindow/texasWindow4.png" data-cimg2="./assets/images/projectImages/texasWindow/texasWindow5.png" data-cimg3="./assets/images/projectImages/texasWindow/texasWindow6.png" data-cimg4="./assets/images/projectImages/texasWindow/texasWindow7.png">ABOUT</button>
+                                            <a class="projectViewsButtonTwo" href="http://texasbestdfw.com/" target="_blank">VIEW PROJECT</a></button>
+                                            <p class="icon-links">
+                                                <a href="#">
+                                                    <span class="fa fa-twitter"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-facebook"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-instagram"></span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix cms projectPadding project11" data-myorder="8">
+                                <div class="projectImgContainer">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="./assets/images/projectPreviews/americanLock.png" alt="All American Locksmith Image">
+                                        <div class="overlay">
+                                            <p class="projectTitle">All American Locksmith</p>
+                                            <button class="projectViewsButtonOne" data-toggle="modal" data-target=".about-project-modal-sm" data-title="All American Locksmith" data-text="All American Locksmith was created using Wordpress & the Genesis theme framework." data-img1="./assets/images/projectImages/americanLock/americanLock1.png" data-img2="./assets/images/projectImages/americanLock/americanLock2.png" data-img3="./assets/images/projectImages/americanLock/americanLock3.png" data-cimg1="./assets/images/projectImages/americanLock/americanLock4.png" data-cimg2="./assets/images/projectImages/americanLock/americanLock5.png" data-cimg3="./assets/images/projectImages/americanLock/americanLock6.png" data-cimg4="./assets/images/projectImages/americanLock/americanLock7.png">ABOUT</button>
+                                            <a class="projectViewsButtonTwo" href="http://allamericanlocksmith.net/" target="_blank">VIEW PROJECT</a></button>
+                                            <p class="icon-links">
+                                                <a href="#">
+                                                    <span class="fa fa-twitter"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-facebook"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-instagram"></span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix cms projectPadding project12" data-myorder="8">
+                                <div class="projectImgContainer">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="./assets/images/projectPreviews/leyKellInsurance.png" alt="Leykell Insurace Image">
+                                        <div class="overlay">
+                                            <p class="projectTitle">Leykell Insurance</p>
+                                            <button class="projectViewsButtonOne" data-toggle="modal" data-target=".about-project-modal-sm" data-title="Leykell Insurance" data-text="Leykell Insurance was created using Wordpress & the Genesis theme framework." data-img1="./assets/images/projectImages/insurance/insurance1.png" data-img2="./assets/images/projectImages/insurance/insurance2.png" data-img3="./assets/images/projectImages/insurance/insurance3.png" data-cimg1="./assets/images/projectImages/insurance/insurance4.png" data-cimg2="./assets/images/projectImages/insurance/insurance5.png" data-cimg3="./assets/images/projectImages/insurance/insurance6.png" data-cimg4="./assets/images/projectImages/insurance/insurance7.png">ABOUT</button>
+                                            <a class="projectViewsButtonTwo" href="http://leykellinsurance.com/" target="_blank">VIEW PROJECT</a></button>
+                                            <p class="icon-links">
+                                                <a href="#">
+                                                    <span class="fa fa-twitter"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-facebook"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-instagram"></span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix cms projectPadding project13" data-myorder="8">
+                                <div class="projectImgContainer">
+                                    <div class="hovereffect">
+                                        <img class="img-responsive" src="./assets/images/projectPreviews/queenAnnePsychology.png" alt="Queen Anne Psychology">
+                                        <div class="overlay">
+                                            <p class="projectTitle">Queen Anne Psychology</p>
+                                            <button class="projectViewsButtonOne" data-toggle="modal" data-target=".about-project-modal-sm" data-title="Queen Anne Psychology" data-text="Queen Anne Psychology was created using Wordpress,  the Divi Builder." data-img1="./assets/images/projectImages/psychology/psychology1.png" data-img2="./assets/images/projectImages/psychology/psychology2.png" data-img3="./assets/images/projectImages/psychology/psychology3.png" data-cimg1="./assets/images/projectImages/psychology/psychology4.png" data-cimg2="./assets/images/projectImages/psychology/psychology5.png" data-cimg3="./assets/images/projectImages/psychology/psychology6.png" data-cimg4="./assets/images/projectImages/psychology/psychology7.png">ABOUT</button>
+                                            <a class="projectViewsButtonTwo" href="http://queenannepsychology.com" target="_blank">VIEW PROJECT</a></button>
+                                            <p class="icon-links">
+                                                <a href="#">
+                                                    <span class="fa fa-twitter"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-facebook"></span>
+                                                </a>
+                                                <a href="#">
+                                                    <span class="fa fa-instagram"></span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="contact" class="contact">
+            <h1>Contact</h1>
+            <form class="form-horizontal" role="form" method="post" action="https://formspree.io/networkingartist@gmail.com">
+                <div class="form-group">
+                    <label for="name" class="col-sm-2 control-label">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="col-sm-2 control-label">Message</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" rows="4" name="message">
+                        </textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-10 col-sm-offset-2">
+                        <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-10 col-sm-offset-2">
+                    </div>
+                </div>
+            </form>
+        </section>
+        </div>
+</body>
+<!DOCTYPE html>
