@@ -33,6 +33,7 @@ $( document ).ready(function() {
    var carouselUrl2 = button.data('cimg2')
    var carouselUrl3 = button.data('cimg3')
    var carouselUrl4 = button.data('cimg4')
+   var openProjectLink = button.data('projectlink')
 
     var modal = $(this)
     modal.find('.projectTitleText').text(title)
@@ -44,6 +45,7 @@ $( document ).ready(function() {
     modal.find('.carouselImage2').attr('src', carouselUrl2)
     modal.find('.carouselImage3').attr('src', carouselUrl3)
     modal.find('.carouselImage4').attr('src', carouselUrl4)
+    modal.find('.siteLink').attr('href', openProjectLink)
   });
 
 /* Animation Bug Fix */

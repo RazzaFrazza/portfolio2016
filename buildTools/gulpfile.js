@@ -30,6 +30,8 @@ gulp.task('bootlint', function() {
         .pipe(bootlint());
 });
 
+ 
+
 gulp.task('css', function () {
   var processors = [
         autoprefixer
@@ -47,4 +49,5 @@ gulp.task('watch', function () {
     gulp.watch('../sourceAssets/scss/*.scss', ['build-css']);
     gulp.watch('../sourceAssets/scss/*.scss', ['css']);
     gulp.watch('../index.html', ['bootlint']);
+    gulp.watch('../sourceAssets/images/projectPreviews/*', ['imagemin']);
 });
