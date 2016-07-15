@@ -1183,6 +1183,17 @@ ul li {
 
 }
 
+/* IE Fixes */
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      .modal-open .carousel {
+         height:0;
+    }
+    .footer .mcSignup .email {
+    padding: 0;
+    }
+}
+
 
 
 
