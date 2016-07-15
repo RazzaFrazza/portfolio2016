@@ -350,7 +350,7 @@ ul {
 .phone {
     background-image: url("../images/iphone4.png");
     display: inline-block;
-    height: 466px;
+    height: 479px;
     width: 383px;
     margin: 1em;
         a {
@@ -504,6 +504,10 @@ ul {
                 text-transform: uppercase;
                 color: #35383a;
             }
+            
+    .emailAddress {
+      width: 400px;
+    }
             p {
                 padding-left: 1em;
                 padding-right: 1em;
