@@ -303,6 +303,10 @@ body {
 
 /* End Hover Effects */ 
 
+.container-fluid {
+  max-height: 1px;
+}
+
   .list-inline {
         margin-left: 7.4%;
         position: relative;
@@ -1039,6 +1043,8 @@ top: 1em;
     text-align: center;
     margin-top: 2em;
     padding: 0;
+    padding-left: 2em;
+    padding-right: 2em;
     }
   }
 }
@@ -1187,7 +1193,7 @@ ul li {
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
       .modal-open .carousel {
-         height:0;
+         height: 250px;
     }
     .footer .mcSignup .email {
     padding: 0;
