@@ -504,7 +504,10 @@ ul {
                 text-transform: uppercase;
                 color: #35383a;
             }
-            
+            :nth-child(4) {
+              padding-top: 0;
+            }
+
     .emailAddress {
       width: 400px;
     }
