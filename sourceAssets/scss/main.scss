@@ -316,12 +316,14 @@ body {
 }
 
 .list-inline {
-    margin-left: 7.4%;
     position: relative;
     top: 2em;
     padding-left: 0;
     list-style: none;
-    .listButtonContainer {
+    li:nth-child(1) {
+        display: block;
+    }
+    .listButtons {
         display: inline-block;
     }
 }
@@ -451,6 +453,26 @@ ul {
             margin-right: 40%;
             margin-left: 7%
         }
+    }
+}
+
+.mobileMenu {
+    .glyphicon {
+        font-size: 30px; 
+        position: relative;
+        left: 0.5em;
+    }
+    a {
+        padding: 0.5em;
+    }
+         a:hover {
+                color: #35383a;
+            }
+    .menu {
+        text-align: center;
+    }
+    ul {
+        padding: 0;
     }
 }
 
@@ -813,25 +835,12 @@ h1 {
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 69.625em) {
-    ul .listButtons {
-        padding: 0;
-    }
     .hamburger {
         display: none;
-    }
-    .list-inline {
-        .listButtonContainer {
-            margin-left: 0;
-            position: relative;
-            top: 1em;
-        }
     }
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 56.3125em) {
-    ul .listButtons {
-        padding: 0;
-    }
     .hamburger {
         display: none;
     }
@@ -842,25 +851,21 @@ h1 {
             bottom: 2em;
         }
     }
-    .list-inline {
-        .listButtonContainer {
-            margin-left: 0;
-            position: relative;
-            top: 1em;
-        }
-    }
 }
 
+@media only screen and (min-width: 60em) {
+    .list-inline {
+        margin-right: 40%;
+        margin-left: 7%;
+    }
+}
 
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 // Large screens
 @media only screen and (min-width: 60em) and (max-width: 65em) {
     .hero {
-        .listButtonContainer {
-            top: 0;
-            display: inline-block;
-        }
+
         .contactButton {
             font-size: 16px;
         }
@@ -872,18 +877,6 @@ h1 {
         }
     }
 }
-
-
-/* min-width 1025px, large screens */
-
-@media only screen and (min-width: 67.3125em) {
-    ul {
-        .listButtons {
-            padding: 0.4em;
-        }
-    }
-}
-
 
 
 /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
@@ -899,17 +892,6 @@ h1 {
 
 
 
-
-/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
-
-// XXLarge screens
-@media only screen and (min-width: 120.063em) {}
-
-
-/* min-width 1921px, xxlarge screens */
-
-// Small screens
-@media only screen {}
 
 
 /* Define mobile styles */
@@ -1004,20 +986,6 @@ h1 {
     .navigation {
         display: none;
     }
-    .list-inline {
-        text-align: center;
-        margin: 0;
-        padding: 1em;
-        width: 100%;
-        top: 0 !important;
-        li {
-            padding: 0.7em;
-        }
-        .listButtonContainer {
-            margin: 0;
-            top: 0 !important;
-        }
-    }
     .phoneContainer {
         display: none;
     }
@@ -1033,6 +1001,11 @@ h1 {
             font-size: 15px;
         }
         .list-inline {
+            .listButtons {
+                padding-top: 6em;
+            }
+            text-align: center;
+
             li {
                 a {
                     font-size: 15px;
@@ -1078,21 +1051,17 @@ h1 {
         padding: 0;
     }
     .hero {
+        .row {
+            margin-right: 0;
+        }
+        .list-inline {
         ul li {
             .icon {
                 height: 22px;
                 width: 22px;
             }
         }
-        .list-inline {
-            .listButtonContainer {
-                margin-top: 2em;
-            }
-            li {
-                padding: 0.3em;
-                padding-top: 1em;
-            }
-        }
+    }
     }
     .textContainer {
         .techLogosContainer {
@@ -1131,6 +1100,12 @@ h1 {
             a {
                 font-size: 15px;
             }
+        }
+    }
+    .mobileMenu {
+        .glyphicon {
+            font-size: 20px;
+            left: 0;
         }
     }
     .hamburger {
@@ -1195,6 +1170,13 @@ h1 {
         }
     }
     .footer {
+        .subscribe {
+        .innerSubscribe {
+            .emailAddress{
+            width: 100%;
+        }
+        }
+       }
         h1 {
             font-size: 20px;
         }
@@ -1219,15 +1201,6 @@ h1 {
         }
     }
 }
-
-
-/* Media Queries */
-
-// Medium screens
-@media only screen and (min-width: 40.065em) {}
-
-
-
 
 
 
