@@ -1055,6 +1055,11 @@ h1 {
             margin-right: 0;
         }
         .list-inline {
+            left: 1em;
+            .listButtons {
+                padding: 0.2em;
+                padding-top: 4em;
+            }
         ul li {
             .icon {
                 height: 22px;
@@ -1114,6 +1119,9 @@ h1 {
         }
     }
     .projects {
+        .mix {
+            padding: 2em;
+        }
         h1 {
             font-size: 20px;
         }
