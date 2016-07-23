@@ -41,6 +41,10 @@ body {
     color: #fff;
 }
 
+.sectionHeader {
+    display: none;
+}
+
 .x {
     display: none;
     height: 4em;
@@ -350,10 +354,10 @@ ul {
 .phone {
     background-image: url("../images/iphone4.png");
     display: inline-block;
-    height: 479px;
+    height: 465px;
     width: 383px;
     margin: 1em;
-        a {
+    a {
         font-size: 33px;
         position: relative;
         top: 8em;
@@ -362,21 +366,20 @@ ul {
         color: transparent;
     }
     a:nth-child(2) {
-    left: 2.1em;
+        left: 2.1em;
     }
 }
 
 .phoneContainer {
     float: right;
     position: relative;
-    bottom: 23.2em;
+    bottom: 21.57em;
 }
 
 .contact {
     background-color: #fff;
     padding: 4em;
     position: relative;
-    bottom: 25.5em;
     padding-left: 20%;
     padding-right: 20%;
     h1 {
@@ -407,6 +410,10 @@ ul {
 }
 
 .hero {
+    height: 500px;
+    .row {
+        display: inline-block;
+    }
     background-image: url('../images/heroBackground.png');
     background-size: cover;
     .contactButton {
@@ -421,37 +428,43 @@ ul {
         text-decoration: none;
     }
     .heroImageText {
-        margin-top: 6em;
-        margin-left: 7%;
+        margin-top: 2.2em;
         text-shadow: 1px 1px black;
         h1 {
             font-weight: 900;
             font-size: 44px;
             margin: 0;
+            margin-left: 7%;
         }
         h3 {
             font-weight: 700;
             margin: 0;
             padding: 0;
+            margin-left: 7%;
         }
         p {
             font-size: 20px;
             font-weight: 400;
-            padding: 2em 24em 0 0;
+            padding: 2em 0 0 0;
             letter-spacing: 0.1em;
             display: inline-block;
+            margin-right: 40%;
+            margin-left: 7%
         }
     }
 }
 
 .navigation {
-    position: relative;
-    bottom: 26em;
+    .row {
+        height: 200px;
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
 }
 
 .services {
-    position: relative;
-    bottom: 25.1em;
     text-align: center;
     background-color: white;
     padding: 2em;
@@ -485,8 +498,6 @@ ul {
 
 .footer {
     background-color: #f2f4f5;
-    position: relative;
-    bottom: 26em;
     .subscribe {
         .fa {
             font-size: 1.5em;
@@ -505,12 +516,11 @@ ul {
                 color: #35383a;
             }
             :nth-child(4) {
-              padding-top: 0;
+                padding-top: 0;
             }
-
-    .emailAddress {
-      width: 400px;
-    }
+            .emailAddress {
+                width: 400px;
+            }
             p {
                 padding-left: 1em;
                 padding-right: 1em;
@@ -581,7 +591,7 @@ ul {
         }
         .email {
             display: inline-block;
-            padding: 1em;
+            padding-left: 3%;
             margin: 0;
             text-transform: uppercase;
             height: 32px;
@@ -595,8 +605,6 @@ ul {
 .mainNav {
     background-color: #d2402d;
     height: 95px;
-    position: relative;
-    top: 0.88em;
     .navContactButton {
         background-color: white;
         color: #d2402d;
@@ -649,8 +657,6 @@ ul {
 .projects {
     background-color: #fff;
     display: block;
-    position: relative;
-    bottom: 25.2em;
     button {
         font-size: 15px;
         padding: 0.5em;
@@ -806,19 +812,7 @@ h1 {
     }
 }
 
-
-/* Media Queries */
-
-// Medium screens
-@media only screen and (min-width: 40.065em) {}
-
-
-/* min-width 641px, medium screens */
-
 @media only screen and (min-width: 40.063em) and (max-width: 69.625em) {
-    .services {
-        bottom: 25.11em;
-    }
     ul .listButtons {
         padding: 0;
     }
@@ -835,9 +829,6 @@ h1 {
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 56.3125em) {
-    .services {
-        bottom: 26.5em;
-    }
     ul .listButtons {
         padding: 0;
     }
@@ -864,23 +855,73 @@ h1 {
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 // Large screens
-@media only screen and (min-width: 69.626em) {}
+@media only screen and (min-width: 60em) and (max-width: 65em) {
+    .phoneContainer {
+        bottom: 27.7em;
+    }
+    .hero {
+        .listButtonContainer {
+            top: 0;
+            display: inline-block;
+        }
+        .contactButton {
+            font-size: 16px;
+        }
+        ul {
+            li {
+                font-size: 16px;
+                padding: 0.2em;
+            }
+        }
+    }
+}
 
 
 /* min-width 1025px, large screens */
 
-@media only screen and (min-width: 69.625em) and (max-width: 90em) {}
+@media only screen and (min-width: 67.3125em) {
+    .phoneContainer {
+        bottom: 19.57em;
+    }
+    ul {
+        .listButtons {
+            padding: 0.4em;
+        }
+    }
+}
+
+
+/* Custom Media Queries */
+
+@media only screen and (min-width: 81.125em) {
+    .phoneContainer {
+        bottom: 17.57em;
+    }
+}
 
 
 /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
 // XLarge screens
-@media only screen and (min-width: 90.063em) {}
+@media only screen and (min-width: 87.4375em) {
+    .phoneContainer {
+        bottom: 19.57em;
+    }
+    .hero {
+        .heroImageText {
+            margin-top: 4.2em;
+        }
+    }
+}
 
 
 /* min-width 1441px, xlarge screens */
 
-@media only screen and (min-width: 90.063em) and (max-width: 120em) {}
+@media only screen and (min-width: 105.875em) and (max-width: 120em) {
+    .phoneContainer {
+        bottom: 17.57em;
+    }
+}
 
 
 /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
@@ -897,7 +938,7 @@ h1 {
 
 /* Define mobile styles */
 
-@media only screen and (max-width: 54.3126em) {
+@media only screen and (max-width: 65.3126em) {
     .mobileMenu:nth-child(3) {
         display: none;
     }
@@ -917,7 +958,6 @@ h1 {
         }
     }
     .projects {
-        bottom: 4.2em;
         .overlay {
             height: 4.75em;
         }
@@ -1058,11 +1098,23 @@ h1 {
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 @media only screen and (max-width: 40em) {
+    .container-fluid {
+        padding: 0;
+    }
     .hero {
         ul li {
             .icon {
-                height: 19px;
-                width: 19px;
+                height: 22px;
+                width: 22px;
+            }
+        }
+        .list-inline {
+            .listButtonContainer {
+                margin-top: 2em;
+            }
+            li {
+                padding: 0.3em;
+                padding-top: 1em;
             }
         }
     }
@@ -1115,10 +1167,11 @@ h1 {
             font-size: 20px;
         }
         p {
-            font-size: 12px;
+            font-size: 14px;
+            padding: 1em;
         }
         .projectsContactButton {
-            font-size: 12px;
+            font-size: 13px;
         }
         .hovereffect a {
             font-size: 12px;
@@ -1129,7 +1182,21 @@ h1 {
         .controlStyles {
             font-size: 12px;
         }
+        .projectsSlider {
+            padding: 0;
+            padding-top: 4em;
+        }
+        .projectsViews .mix {
+            padding-left: 4em;
+            padding-right: 4em;
+        }
         .textContainer {
+            padding: 0;
+            p {
+                padding: 1em;
+                padding-left: 4em;
+                padding-right: 4em;
+            }
             .techLogosContainer {
                 img {
                     height: 40px;
@@ -1138,7 +1205,6 @@ h1 {
         }
     }
     .contact {
-        bottom: 5em;
         h1 {
             font-size: 20px;
         }
@@ -1153,7 +1219,6 @@ h1 {
         }
     }
     .footer {
-        bottom: 5em;
         h1 {
             font-size: 20px;
         }
@@ -1175,6 +1240,48 @@ h1 {
         }
         .fa-2x {
             font-size: 1.5em;
+        }
+    }
+}
+
+
+/* Media Queries */
+
+// Medium screens
+@media only screen and (min-width: 40.065em) {}
+
+
+/* Firefox fixes */
+
+@-moz-document url-prefix() {
+    .phoneContainer {
+        float: right;
+        position: relative;
+        bottom: 21.87em;
+    }
+    @media only screen and (min-width: 60em) and (max-width: 65em) {
+        .phoneContainer {
+            bottom: 30.7em;
+        }
+    }
+    @media only screen and (min-width: 67.875em) {
+        .phoneContainer {
+            bottom: 19.85em;
+        }
+    }
+    @media only screen and (min-width: 81.0625em) {
+        .phoneContainer {
+            bottom: 17.75em;
+        }
+    }
+    @media only screen and (min-width: 1399px) {
+        .phoneContainer {
+            bottom: 19.79em;
+        }
+    }
+    @media only screen and (min-width: 1694px) {
+        .phoneContainer {
+            bottom: 17.75em;
         }
     }
 }
