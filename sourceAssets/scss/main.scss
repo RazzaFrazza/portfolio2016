@@ -779,7 +779,7 @@ h1 {
     }
     p {
         color: #35383a;
-        padding: 1em;
+        padding-top: 1em;
     }
     .carousel {
         height: 180px;
@@ -811,7 +811,7 @@ h1 {
             font-size: 15px;
             background-color: #d2402d;
             color: #fff;
-            margin: 0.5em;
+            margin: 2.5em;
             border-radius: 0.2em;
             font-weight: 700;
             font-size: 20px;
@@ -1051,6 +1051,14 @@ h1 {
         padding: 0;
     }
     .hero {
+        .heroImageText {
+            h1 {
+                font-size: 25px;
+            }
+            h3{
+                font-size: 20px;
+            }
+        }
         .row {
             margin-right: 0;
         }
@@ -1085,11 +1093,6 @@ h1 {
         p {
             font-size: 14px;
         }
-        .aboutProjectsText {
-            a {
-                font-size: 12px;
-            }
-        }
         .aboutImageContainer {
             img {
                 height: 80%;
@@ -1112,6 +1115,11 @@ h1 {
             font-size: 20px;
             left: 0;
         }
+        .menu {
+            li {
+                padding: 0;
+            }
+        }
     }
     .hamburger {
         .glyphicon {
@@ -1123,7 +1131,7 @@ h1 {
             padding: 2em;
         }
         h1 {
-            font-size: 20px;
+            font-size: 25px;
         }
         p {
             font-size: 14px;
