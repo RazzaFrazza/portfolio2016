@@ -458,16 +458,16 @@ ul {
 
 .mobileMenu {
     .glyphicon {
-        font-size: 30px; 
+        font-size: 30px;
         position: relative;
         left: 0.5em;
     }
     a {
         padding: 0.5em;
     }
-         a:hover {
-                color: #35383a;
-            }
+    a:hover {
+        color: #35383a;
+    }
     .menu {
         text-align: center;
     }
@@ -860,12 +860,12 @@ h1 {
     }
 }
 
+
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 // Large screens
 @media only screen and (min-width: 60em) and (max-width: 65em) {
     .hero {
-
         .contactButton {
             font-size: 16px;
         }
@@ -889,9 +889,6 @@ h1 {
         }
     }
 }
-
-
-
 
 
 /* Define mobile styles */
@@ -1005,7 +1002,6 @@ h1 {
                 padding-top: 6em;
             }
             text-align: center;
-
             li {
                 a {
                     font-size: 15px;
@@ -1055,7 +1051,7 @@ h1 {
             h1 {
                 font-size: 25px;
             }
-            h3{
+            h3 {
                 font-size: 20px;
             }
         }
@@ -1068,13 +1064,13 @@ h1 {
                 padding: 0.2em;
                 padding-top: 4em;
             }
-        ul li {
-            .icon {
-                height: 22px;
-                width: 22px;
+            ul li {
+                .icon {
+                    height: 22px;
+                    width: 22px;
+                }
             }
         }
-    }
     }
     .textContainer {
         .techLogosContainer {
@@ -1087,6 +1083,13 @@ h1 {
         }
     }
     .modal-open {
+        .carousel {
+            .carousel-inner {
+                img {
+                    height: 100%;
+                }
+            }
+        }
         .modal-dialog {
             width: 300px;
         }
@@ -1187,12 +1190,12 @@ h1 {
     }
     .footer {
         .subscribe {
-        .innerSubscribe {
-            .emailAddress{
-            width: 100%;
+            .innerSubscribe {
+                .emailAddress {
+                    width: 100%;
+                }
+            }
         }
-        }
-       }
         h1 {
             font-size: 20px;
         }
@@ -1217,7 +1220,6 @@ h1 {
         }
     }
 }
-
 
 
 /* IE Fixes */
