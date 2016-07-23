@@ -356,7 +356,6 @@ ul {
     display: inline-block;
     height: 465px;
     width: 383px;
-    margin: 1em;
     a {
         font-size: 33px;
         position: relative;
@@ -371,9 +370,9 @@ ul {
 }
 
 .phoneContainer {
-    float: right;
-    position: relative;
-    bottom: 21.57em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .contact {
@@ -411,6 +410,7 @@ ul {
 
 .hero {
     height: 500px;
+    position: relative;
     .row {
         display: inline-block;
     }
@@ -856,9 +856,6 @@ h1 {
 
 // Large screens
 @media only screen and (min-width: 60em) and (max-width: 65em) {
-    .phoneContainer {
-        bottom: 27.7em;
-    }
     .hero {
         .listButtonContainer {
             top: 0;
@@ -880,9 +877,6 @@ h1 {
 /* min-width 1025px, large screens */
 
 @media only screen and (min-width: 67.3125em) {
-    .phoneContainer {
-        bottom: 19.57em;
-    }
     ul {
         .listButtons {
             padding: 0.4em;
@@ -891,22 +885,11 @@ h1 {
 }
 
 
-/* Custom Media Queries */
-
-@media only screen and (min-width: 81.125em) {
-    .phoneContainer {
-        bottom: 17.57em;
-    }
-}
-
 
 /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
 // XLarge screens
 @media only screen and (min-width: 87.4375em) {
-    .phoneContainer {
-        bottom: 19.57em;
-    }
     .hero {
         .heroImageText {
             margin-top: 4.2em;
@@ -915,13 +898,6 @@ h1 {
 }
 
 
-/* min-width 1441px, xlarge screens */
-
-@media only screen and (min-width: 105.875em) and (max-width: 120em) {
-    .phoneContainer {
-        bottom: 17.57em;
-    }
-}
 
 
 /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
@@ -1251,40 +1227,8 @@ h1 {
 @media only screen and (min-width: 40.065em) {}
 
 
-/* Firefox fixes */
 
-@-moz-document url-prefix() {
-    .phoneContainer {
-        float: right;
-        position: relative;
-        bottom: 21.87em;
-    }
-    @media only screen and (min-width: 60em) and (max-width: 65em) {
-        .phoneContainer {
-            bottom: 30.7em;
-        }
-    }
-    @media only screen and (min-width: 67.875em) {
-        .phoneContainer {
-            bottom: 19.85em;
-        }
-    }
-    @media only screen and (min-width: 81.0625em) {
-        .phoneContainer {
-            bottom: 17.75em;
-        }
-    }
-    @media only screen and (min-width: 1399px) {
-        .phoneContainer {
-            bottom: 19.79em;
-        }
-    }
-    @media only screen and (min-width: 1694px) {
-        .phoneContainer {
-            bottom: 17.75em;
-        }
-    }
-}
+
 
 
 /* IE Fixes */
