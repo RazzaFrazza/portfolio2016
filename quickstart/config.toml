@@ -1,0 +1,4 @@
+baseURL = "http://websitedesignnorthcarolina.net"
+languageCode = "en-us"
+title = "Matthew Shaver Web Design"
+theme = "ananke"
