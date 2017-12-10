@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Matthew Shaver Web Design</title>
+    <link>http://websitedesignnorthcarolina.net/posts/</link>
+    <description>Recent content in Posts on Matthew Shaver Web Design</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Nov 2017 13:31:22 -0500</lastBuildDate>
+    
+	<atom:link href="http://websitedesignnorthcarolina.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Functional Programming with Javascript</title>
+      <link>http://websitedesignnorthcarolina.net/posts/my-first-post/</link>
+      <pubDate>Mon, 27 Nov 2017 13:31:22 -0500</pubDate>
+      
+      <guid>http://websitedesignnorthcarolina.net/posts/my-first-post/</guid>
+      <description>What is functional programming? Functional programming (often abbreviated FP) is the process of building software by composing pure functions, avoiding shared state, mutable data, and side-effects</description>
+    </item>
+    
+  </channel>
+</rss>
